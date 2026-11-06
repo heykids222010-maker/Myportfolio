@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index6.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            scrollbar-color: #ffffff #ffffff;
+            padding: 0;
+            margin: 0;
+           
+
+        }
+
+
+         body {
+                background-image: url(fotosatuan.jpg);
+                width: 100%;
+              
+            }
+
+                .site-footer {
+            background-color: #121212;
+            color: #f1f1f1;
+            padding: 60px 5% 20px;
+            font-family: sans-serif;
+            border-top: 1px solid #2a2a2a;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #ffffff;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 35px;
+            height: 2px;
+            background-color: #ffffff;
+        }
+
+        .footer-col p {
+            color: #9ca3af;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.2s ease, transform 0.2s ease;
+            display: inline-block;
+            font-size: 0.95rem;
+        }
+
+        .footer-col a:hover {
+            color: #ffffff;
+            transform: translateX(4px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1f2937;
+            color: #9ca3af;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+
+        .social-links a:hover {
+            background: #ffffff;
+            color: #000000;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 25px;
+            border-top: 1px solid #1f2937;
+            color: #6b7280;
+            font-size: 0.85rem;
+        }
+
+        /* --- MEDIA QUERY MOBILE (< 480px) --- */
+        @media (max-width: 480px) {
+            html {
+                overflow-x: hidden;
+            }
+
+           
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                backdrop-filter: blur(10px);
+                background-color: rgba(255, 255, 255, 0);
+                color: white;
+                padding: 1rem 2rem;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 9000;
+                border-bottom: 2px solid #ffffff;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+
+            .nav-links {
+                display: flex;
+                list-style: none;
+                gap: 20px;
+            }
+
+            .nav-links li a {
+                text-decoration: none;
+                color: white;
+                font-size: 1rem;
+                transition: color 0.3s;
+            }
+
+            .nav-links li a:hover {
+                color: #979393;
+            }
+
+            .hamburger {
+                display: none;
+                cursor: pointer;
+            }
+
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                background-color: white;
+                transition: all 0.3s ease-in-out;
+            }
+   
+            
+        /* ============================================================
+           FOOTER BARU — dipasangkan dari kode yang diberikan
+           ============================================================ */
+        .site-footer {
+            background-color: #121212;
+            color: #f1f1f1;
+            padding: 60px 5% 20px;
+            font-family: sans-serif;
+            border-top: 1px solid #2a2a2a;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #ffffff;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 35px;
+            height: 2px;
+            background-color: #fcfcfc;
+        }
+
+        .footer-col p {
+            color: #9ca3af;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.2s ease, transform 0.2s ease;
+            display: inline-block;
+            font-size: 0.95rem;
+        }
+
+        .footer-col a:hover {
+            color: #ffffff;
+            transform: translateX(4px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1f2937;
+            color: #9ca3af;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+
+        .social-links a:hover {
+            background: #fcfcfc;
+            color: #0c0c0c;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 25px;
+            border-top: 1px solid #1f2937;
+            color: #6b7280;
+            font-size: 0.85rem;
+        }
+       
+        }
+        /* ================= CONTACT SECTION (RESPONSIVE GRID IMPROVED) ================= */
+        .contact-container-box {
+            max-width: 1100px;
+            margin: 120px auto 60px auto; /* Memberikan jarak atas agar tidak tertutup navbar fixed */
+            padding: 0 20px;
+        }
+
+        .contact-section {
+            display: grid;
+            grid-template-columns: 1fr; /* Default mobile: 1 kolom */
+            gap: 40px;
+            background-color: #ffffff;
+            padding: 35px;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Otomatis menjadi 2 kolom kiri-kanan pada layar PC/Desktop */
+        @media (min-width: 769px) {
+            .contact-section {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+        }
+
+        .contact-info h2, .contact-form h2 {
+            color: #0f172a;
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .contact-info p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* Form Controls */
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #334155;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: #0f172a; /* Warna text input diubah menjadi gelap agar terbaca jelas */
+            background-color: #f8fafc;
+            box-sizing: border-box;
+            transition: all 0.2s ease;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #25d366;
+            background-color: #ffffff;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.15);
+        }
+
+        .btn-wa {
+            width: 100%;
+            padding: 14px;
+            background-color: #25d366;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-wa:hover {
+            background-color: #1ea952;
+        }
+
+        /* ================= BREAKPOINTS (MEDIA QUERIES) ================= */
+       
+        /* --- MEDIA QUERY DESKTOP (> 1201px) --- */
+        @media (min-width: 1201px) {
+            html {
+              
+                overflow-x: hidden;
+            }
+
+            body {
+                background-color: #000000;
+                width: 100%;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                backdrop-filter: blur(10px);
+                background-color: rgba(255, 255, 255, 0);
+                color: white;
+                padding: 1rem 2rem;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 9000;
+                border-bottom: 2px solid #ffffff;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+
+            .nav-links {
+                display: flex;
+                list-style: none;
+                gap: 20px;
+            }
+
+            .nav-links li a {
+                text-decoration: none;
+                color: white;
+                font-size: 1rem;
+                transition: color 0.3s;
+            }
+
+            .nav-links li a:hover {
+                color: #979393;
+            }
+
+            .hamburger {
+                display: none;
+                cursor: pointer;
+            }
+
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                background-color: white;
+                transition: all 0.3s ease-in-out;
+            }
+                    .site-footer {
+            background-color: #121212;
+            color: #f1f1f1;
+            padding: 60px 5% 20px;
+            font-family: sans-serif;
+            border-top: 1px solid #2a2a2a;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #ffffff;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 35px;
+            height: 2px;
+            background-color: #fdfeff;
+        }
+
+        .footer-col p {
+            color: #9ca3af;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.2s ease, transform 0.2s ease;
+            display: inline-block;
+            font-size: 0.95rem;
+        }
+
+        .footer-col a:hover {
+            color: #ffffff;
+            transform: translateX(4px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1f2937;
+            color: #9ca3af;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+
+        .social-links a:hover {
+            background: #fefefe;
+            color: #000000;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 25px;
+            border-top: 1px solid #1f2937;
+            color: #6b7280;
+            font-size: 0.85rem;
+        }
+        }
+
+        /* --- MEDIA QUERY TABLET (max 768px) --- */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                left: -100%;
+                top: 60px;
+                flex-direction: column;
+                background-color: #000;
+                width: 100%;
+                height: 100vh;
+                text-align: center;
+                padding-top: 50px;
+                transition: 0.5s;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .hamburger.active .bar:nth-child(2) { opacity: 0; }
+            .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+        }
+
+        audio { display: none; }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+        <div class="logo"><i>𝙈𝙮𝙬𝙚𝙙</i></div>
+        <ul class="nav-links">
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="index3.html">About</a></li>
+            <li><a href="index4.html">Galeri</a></li>
+            <li><a href="index5.html">Services</a></li>
+            <li><a href="index6.html">Kontak</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="contact-container-box">
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Tertarik Bekerja Sama?</h2>
+                <p>Silakan isi formulir di samping untuk mengajukan penawaran proyek, diskusi bisnis, atau sekadar menyapa saya.</p>
+                <p>Setelah menekan tombol kirim, obrolan akan langsung diteruskan ke WhatsApp pribadi saya untuk respon yang lebih instan.</p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Kirim Pesan Langsung</h2>
+                <form id="portfolioContactForm">
+                    <div class="form-group">
+                        <label for="inputNama">Nama Lengkap</label>
+                        <input type="text" id="inputNama" placeholder="Masukkan nama Anda..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputSubjek">Tujuan / Subjek</label>
+                        <input type="text" id="inputSubjek" placeholder="Contoh: Penawaran Kerja / Proyek..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPesan">Isi Pesan Anda</label>
+                        <textarea id="inputPesan" rows="4" placeholder="Ketik rincian pesan di sini..." required></textarea>
+                    </div>
+
+                    <button type="button" onclick="prosesKirimWA()" class="btn-wa">
+                        💬 Kirim via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+     
+   
+  <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <h3>Nama Website</h3>
+                <p>Membangun pengalaman web yang luar biasa, modern, dan fungsional untuk kebutuhan digital Anda.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="https://www.instagram.com/mrvel_r.p/" target="_blank" aria-label="Instagram">IG</a>
+                    <a href="https://web.whatsapp.com/" target="_blank" aria-label="WhatsApp">WA</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Layanan</a></li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Layanan</h3>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Digital Branding</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Kontak</h3>
+                <p>Email: info@namawebsite.com</p>
+                <p>WhatsApp: +62 812-3456-7890</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 NamaWebsite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-links li a").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+        }));
+
+        // Logika Audio dengan pengaman if statement
+        const judul = document.getElementById('judulBunyi');
+        const audio = new Audio('audio.wav');
+
+        if (judul) {
+            judul.addEventListener('click', function() {
+                audio.play();
+            });
+        }
+
+        function prosesKirimWA() {
+            const whatsappNumber = "6281945497854"; 
+
+            const namaValue = document.getElementById('inputNama').value.trim();
+            const subjekValue = document.getElementById('inputSubjek').value.trim();
+            const pesanValue = document.getElementById('inputPesan').value.trim();
+
+            if (namaValue === "" || subjekValue === "" || pesanValue === "") {
+                alert("Mohon maaf, semua kolom harus diisi terlebih dahulu!");
+                return;
+            }
+
+            const textResult = `Halo, saya *${namaValue}*%0A%0A` +
+                               `*Keperluan:* ${subjekValue}%0A` +
+                               `*Pesan:*%0A${pesanValue}`;
+
+            const finalUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${textResult}`;
+
+            window.open(finalUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
